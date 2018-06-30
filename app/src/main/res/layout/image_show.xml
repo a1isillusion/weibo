@@ -1,0 +1,27 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.github.nullguo.weibo.ImageShow">
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/bigimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+  />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/gifimage"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bigimage"></com.facebook.drawee.view.SimpleDraweeView>
+</android.support.constraint.ConstraintLayout>

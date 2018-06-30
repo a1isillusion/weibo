@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.github.nullguo.weibo.MainActivity">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="0dp"
+        android:layout_y="2dp"></com.facebook.drawee.view.SimpleDraweeView>
+
+
+    <TextView
+        android:id="@+id/screen_name"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="69dp"
+        android:layout_y="5dp" />
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/screen_name"
+        android:layout_alignStart="@+id/screen_name"
+        android:layout_below="@+id/screen_name"
+        android:layout_x="70dp"
+        android:layout_y="30dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/created_at"
+        android:layout_alignStart="@+id/created_at"
+        android:layout_below="@+id/created_at"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/created_at"
+        android:layout_alignStart="@+id/created_at"
+        android:layout_below="@+id/text1"
+        android:background="#E0EEEE">
+
+
+        <TextView
+            android:id="@+id/retweetedtext"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_x="70dp"
+            android:layout_y="52dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/retweetedtext"
+            android:layout_alignStart="@+id/retweetedtext"
+            android:layout_below="@+id/retweetedtext"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"></com.facebook.drawee.view.SimpleDraweeView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/retweetedtext"
+            android:layout_toEndOf="@+id/image1"
+            android:layout_toRightOf="@+id/image1"></com.facebook.drawee.view.SimpleDraweeView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/retweetedtext"
+            android:layout_toEndOf="@+id/image2"
+            android:layout_toRightOf="@+id/image2"></com.facebook.drawee.view.SimpleDraweeView>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/image1"
+            android:layout_alignStart="@+id/image1"
+            android:layout_below="@+id/image1"></com.facebook.drawee.view.SimpleDraweeView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/image2"
+            android:layout_toEndOf="@+id/image4"
+            android:layout_toRightOf="@+id/image4"></com.facebook.drawee.view.SimpleDraweeView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/image2"
+            android:layout_toEndOf="@+id/image5"
+            android:layout_toRightOf="@+id/image5"></com.facebook.drawee.view.SimpleDraweeView>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/image4"
+            android:layout_alignStart="@+id/image4"
+            android:layout_below="@+id/image4"></com.facebook.drawee.view.SimpleDraweeView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/image4"
+            android:layout_toEndOf="@+id/image7"
+            android:layout_toRightOf="@+id/image7"></com.facebook.drawee.view.SimpleDraweeView>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/image6"
+            android:layout_toEndOf="@+id/image8"
+            android:layout_toRightOf="@+id/image8"></com.facebook.drawee.view.SimpleDraweeView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/reposts_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/created_at"
+        android:layout_alignStart="@+id/created_at"
+        android:layout_below="@+id/relativeLayout"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/comments_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/attitudes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/comments_count"
+        android:layout_toRightOf="@+id/comments_count"
+        android:text="TextView" />
+
+
+</RelativeLayout>
